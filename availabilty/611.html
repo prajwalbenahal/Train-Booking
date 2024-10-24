@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 2px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align: center; color: rgb(62, 119, 243);"> GET YOUR TICKET HERE</h1>
+
+<form id="searchForm">
+    <label for="travelDate">Select Date: </label>
+    <input type="date" id="travelDate" name="travelDate" required>
+    <input type="submit" value="Check Availability">
+</form>
+
+<h2>Available Trains</h2>
+<table id="availabilityTable">
+    <thead>
+        <tr>
+            <th style="color: rgb(62, 119, 243);">SERIAL NO</th>
+            <th style="color: rgb(62, 119, 243);">TRAIN NUMBER</th>
+            <th style="color: rgb(62, 119, 243);">TRAIN NAME</th>
+            <th style="color: rgb(62, 119, 243);">DEPARTURE TIME</th>
+            <th style="color: rgb(62, 119, 243);">ARRIVAL TIME</th>
+            <th style="color: rgb(62, 119, 243);">SEATS AVAILABLE</th>
+            <th style="color: rgb(62, 119, 243);">BOOKING</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>16517</td>
+            <td>Hubballi Express</td>
+            <td>08:00 AM</td>
+            <td>11:00 AM</td>
+            <td>45</td>
+            <td><button style="background-color: rgb(103, 240, 98);">Book Now</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>16518</td>
+            <td>Yeshvantpur Express</td>
+            <td>02:00 PM</td>
+            <td>05:00 PM</td>
+            <td>20</td>
+            <td><button style="background-color: rgb(103, 240, 98);">Book Now</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>07301</td>
+            <td>Jan Shatabdi</td>
+            <td>05:30 PM</td>
+            <td>08:30 PM</td>
+            <td>10</td>
+            <td><button style="background-color: rgb(103, 240, 98);">Book Now</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>16591</td>
+            <td>Hampi Express</td>
+            <td>08:00 AM</td>
+            <td>11:00 AM</td>
+            <td>55</td>
+            <td><button style="background-color: rgb(103, 240, 98);">Book Now</button></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>20662</td>
+            <td>KSR Bangalore Vande Bharat Express</td>
+            <td>01:15 PM</td>
+            <td>07:45 PM</td>
+            <td>78</td>
+            <td><button style="background-color: rgb(103, 240, 98);">Book Now</button></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>16536</td>
+            <td>Gol Gumbaz Express</td>
+            <td>01:00 PM</td>
+            <td>07:50 PM</td>
+            <td>72</td>
+            <td><button style="background-color: rgb(103, 240, 98);">Book Now</button></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>16217</td>
+            <td>Sai-Nagar Shirdi Weekly Express</td>
+            <td>07:40 AM</td>
+            <td>11:10 AM</td>
+            <td>72</td>
+            <td><button style="background-color: rgb(103, 240, 98);">Book Now</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    document.getElementById("searchForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        // Here you could integrate AJAX call or another method to fetch actual data
+        alert("Check availability is currently displayed statically. Dynamic search can be implemented.");
+    });
+</script>
+
+</body>
+</html>
